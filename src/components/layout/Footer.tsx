@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-white p-4 dark:bg-black print:hidden sm:p-6">
       <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
-      <div className="md:flex md:justify-between">
+      <div className="md:flex md:justify-evenly">
         {/* Logo */}
         <div className="mb-6 md:mb-0">
           <Link href="/" passHref className="flex items-center">
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="sm:flex sm:items-center sm:justify-between">
+      <div className="pt-12 pb-8 sm:flex sm:items-center sm:justify-center">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
           <span className="self-center font-ubuntu text-2xl">
             Get in touch:
