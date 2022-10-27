@@ -8,7 +8,11 @@ module.exports = {
       opensans: ["OpenSans", "sans-serif"],
     },
     extend: {
-      colors: {},
+      colors: {
+        darkPrimary: "#181A1B",
+        darkSecondary: "#25282A",
+        darkWhite: "#f2f5fa",
+      },
       listStyleType: {
         square: "square",
         roman: "upper-roman",

@@ -1,8 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-
-import ThemeToggler from "@components/layout/ThemeToggler";
 
 const Home: NextPage = () => {
   return (
@@ -13,13 +10,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="mt-28 pt-6">
-          <div className="flex flex-col items-center justify-center ">
-            <ThemeToggler />
-          </div>
-        </div>
-      </main>
+      <main></main>
     </>
   );
 };
