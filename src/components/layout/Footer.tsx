@@ -7,6 +7,7 @@ export default function Footer() {
   const router = useRouter();
   return (
     <footer className="bg-white p-4 dark:bg-black print:hidden sm:p-6">
+      <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
       <div className="md:flex md:justify-between">
         {/* Logo */}
         <div className="mb-6 md:mb-0">
@@ -61,7 +62,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 
       <div className="sm:flex sm:items-center sm:justify-between">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
@@ -112,7 +112,7 @@ function FooterLink({
             : " text-gray-600 dark:text-gray-300"
         } w-fit hover:text-black hover:underline dark:hover:text-white`}
       >
-        <span className="capitalize">{text}</span>
+        <span className="text-lg capitalize">{text}</span>
       </a>
     </Link>
   );
