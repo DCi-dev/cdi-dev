@@ -1,5 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
+import { BsGithub, BsLinkedin, BsMailbox } from "react-icons/bs";
 
 const socialLinks = [
   {
@@ -13,8 +12,8 @@ const socialLinks = [
     url: "https://github.com/DCi-dev",
   },
   {
-    title: "Mail",
-    Icon: HiMail,
+    title: "contact@cdi.dev",
+    Icon: BsMailbox,
     url: "mailto:contact@cdi.dev",
   },
 ];

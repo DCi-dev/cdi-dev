@@ -29,6 +29,6 @@
       "@hooks/*": ["src/hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", "src/pages/_document.js"],
   "exclude": ["node_modules"]
 }

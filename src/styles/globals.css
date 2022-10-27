@@ -2,34 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Squartiqa4FStrike";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Squartiqa/Squartiqa4FStrike.ttf) format("truetype");
+}
 /* Font Ubuntu */
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf) format("ttf");
+  src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/Ubuntu/Ubuntu-Italic.ttf) format("ttf");
+  src: url(/fonts/Ubuntu/Ubuntu-Italic.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/Ubuntu/Ubuntu-Bold.ttf) format("ttf");
+  src: url(/fonts/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format("ttf");
+  src: url(/fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format("truetype");
 }
 
 /* Font Open Sans */
@@ -38,28 +45,28 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/OpenSans/OpenSans-Regular.ttf) format("ttf");
+  src: url(/fonts/OpenSans/OpenSans-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "OpenSans";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/OpenSans/OpenSans-Italic.ttf) format("ttf");
+  src: url(/fonts/OpenSans/OpenSans-Italic.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/OpenSans/OpenSans-Bold.ttf) format("ttf");
+  src: url(/fonts/OpenSans/OpenSans-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/OpenSans/OpenSans-BoldItalic.ttf) format("ttf");
+  src: url(/fonts/OpenSans/OpenSans-BoldItalic.ttf) format("truetype");
 }
 
 body,

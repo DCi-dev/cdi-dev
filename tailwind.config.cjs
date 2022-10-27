@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       ubuntu: ["Ubuntu", "sans-serif"],
       opensans: ["OpenSans", "sans-serif"],
+      squartiqa: ["Squartiqa4FStrike", "sans-serif"],
     },
     extend: {
       colors: {

@@ -38,7 +38,9 @@ export default function TopNavbar() {
         <Link href="/" passHref>
           <div className="z-50 flex cursor-pointer items-center gap-2">
             <a className="relative mr-3 hidden sm:inline-flex">
-              <h1 className="font-ubuntu text-xl">CDi</h1>
+              <span className="font-squartiqa text-2xl text-black dark:text-white">
+                CDi
+              </span>
             </a>
           </div>
         </Link>
