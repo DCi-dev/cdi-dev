@@ -6,7 +6,7 @@ import socialMedia from "@content/socialMedia";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="bg-white p-4 dark:bg-gray-900 print:hidden sm:p-6">
+    <footer className="bg-white p-4 dark:bg-black print:hidden sm:p-6">
       <div className="md:flex md:justify-between">
         {/* Logo */}
         <div className="mb-6 md:mb-0">
@@ -65,9 +65,15 @@ export default function Footer() {
 
       <div className="sm:flex sm:items-center sm:justify-between">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+          <span className="self-center font-ubuntu text-2xl">
+            Get in touch:
+          </span>
           {socialMedia.slice(0, 3).map((platform, index) => {
             return (
-              <div key={index} className="text-gray-600 dark:text-gray-400">
+              <div
+                key={index}
+                className="self-center text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              >
                 <Link href={platform.url} passHref className="mb-4">
                   <a
                     className="hover:underline"
