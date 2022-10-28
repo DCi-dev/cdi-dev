@@ -1,9 +1,8 @@
 export const navigationRoutes: string[] = [
   "home",
   "about",
-  "stats",
-  "utilities",
-  "certificates",
   "projects",
+  "certificates",
+  "utilities",
   "contact",
 ];
