@@ -137,7 +137,7 @@ body.dark {
 
 @layer components {
   .pageTop {
-    @apply relative mx-auto mt-[44px] mb-10 max-w-4xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-[60px] 2xl:max-w-5xl 3xl:max-w-7xl;
+    @apply relative mx-auto mt-[44px] mb-10 max-w-5xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-[60px] 2xl:max-w-5xl 3xl:max-w-7xl;
   }
 
   .cards:hover > .card::after {

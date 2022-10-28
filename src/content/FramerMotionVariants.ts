@@ -6,22 +6,15 @@ export const FadeContainer = {
   },
 };
 
-export const hamFastFadeContainer = {
-  hidden: { opacity: 0 },
+export const popUpFromBottomForText = {
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
+    y: 0,
     transition: {
-      delayChildren: 0,
-      staggerChildren: 0.1,
+      type: "spring",
+      stiffness: 60,
     },
-  },
-};
-
-export const mobileNavItemSideways = {
-  hidden: { x: -40, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
   },
 };
 
@@ -33,6 +26,6 @@ export const popUp = {
   },
   transition: {
     type: "spring",
-    duration: 0.2,
+    duration: 0.01,
   },
 };

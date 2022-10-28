@@ -21,13 +21,13 @@ import * as WindowsAnimation from "@lib/WindowsAnimation";
 export default function SkillSection({ props }: { props: Skill[] }) {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center font-opensans">
-      <h2 className="my-2 mb-8 w-full text-left font-ubuntu text-3xl font-bold">
+      <h2 className="my-2 mb-8 w-full text-left font-ubuntu text-6xl font-bold">
         Skills & tools
       </h2>
-      <p className="my-2 mb-8 w-full text-left font-opensans text-lg font-bold">
+      <p className="my-2 mb-8 w-full text-left font-opensans text-xl font-bold">
         The skills, tools and technologies I use to bring products to life:
       </p>
-      <div className="!w-full  font-medium selection:bg-blue-300 dark:text-neutral-200 dark:selection:bg-blue-900 dark:selection:text-gray-400">
+      <div className="w-full font-medium selection:bg-blue-300 dark:text-neutral-200 dark:selection:bg-blue-900 dark:selection:text-gray-400">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -49,9 +49,9 @@ export default function SkillSection({ props }: { props: Skill[] }) {
                   className="card relative flex h-28  flex-col items-center justify-center gap-3 rounded-md border border-transparent bg-white p-8 text-gray-700  shadow  transition-all hover:z-10 hover:origin-center hover:border-gray-400 hover:text-black hover:shadow-lg active:!scale-90 dark:bg-darkSecondary dark:text-gray-300/80 dark:shadow-md dark:hover:border-neutral-600 dark:hover:text-white lg:hover:!scale-125"
                 >
                   <div className="card-content flex flex-col items-center justify-center">
-                    <Icon className="h-8 w-8" />
+                    <Icon className="h-10 w-10" />
 
-                    <p className="absolute bottom-3 select-none text-[10px]">
+                    <p className="absolute bottom-3 select-none text-sm">
                       {skill.title}
                     </p>
                   </div>
