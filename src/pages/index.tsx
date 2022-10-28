@@ -15,17 +15,14 @@ const Home: NextPage<{
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="pt-20">
-          <SkillSection props={skills} />
-        </div>
+      <main className="pageTop">
+        <SkillSection props={skills} />
       </main>
     </>
   );
 };
 
 export default Home;
-
 
 export const getStaticProps: GetStaticProps = async () => {
   const skills: Skill[] = getPinnedSkills();

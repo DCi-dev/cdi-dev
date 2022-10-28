@@ -90,7 +90,7 @@ const skills = [
     description:
       "Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.",
     url: "https://www.figma.com/",
-    pinned: false,
+    pinned: true,
   },
   {
     title: "Adobe Photoshop",

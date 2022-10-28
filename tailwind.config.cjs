@@ -14,6 +14,9 @@ module.exports = {
         darkSecondary: "#25282A",
         darkWhite: "#f2f5fa",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
       listStyleType: {
         square: "square",
         roman: "upper-roman",
