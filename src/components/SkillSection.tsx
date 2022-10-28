@@ -20,7 +20,7 @@ import * as WindowsAnimation from "@lib/WindowsAnimation";
 
 export default function SkillSection({ props }: { props: Skill[] }) {
   return (
-    <section className="font-opensans">
+    <section className="flex min-h-screen flex-col items-center justify-center font-opensans">
       <h2 className="my-2 mb-8 w-full text-left font-ubuntu text-3xl font-bold">
         Skills & tools
       </h2>
@@ -33,7 +33,10 @@ export default function SkillSection({ props }: { props: Skill[] }) {
           whileInView="visible"
           variants={FadeContainer}
           viewport={{ once: true }}
-          className="mt-5 grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5 "
+          onMouseMove={(element) =>
+            WindowsAnimation.showHoverAnimation(element)
+          }
+          className="cards mt-5 grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5 "
         >
           {props.map((skill: Skill, index: number) => {
             const Icon = chooseIcon(skill.title.toLowerCase());
@@ -43,19 +46,15 @@ export default function SkillSection({ props }: { props: Skill[] }) {
                   href={skill.url}
                   variants={popUp}
                   title={skill.title}
-                  onMouseMove={(element) =>
-                    WindowsAnimation.showHoverAnimation(element)
-                  }
-                  onMouseLeave={(element) =>
-                    WindowsAnimation.removeHoverAnimation(element)
-                  }
-                  className="card dark:card relative flex flex-col items-center justify-center gap-3 rounded-md border border-transparent bg-white p-8 text-gray-700  shadow  transition-all hover:z-10 hover:origin-center hover:border-gray-400 hover:text-black hover:shadow-lg active:!scale-90 dark:bg-darkSecondary dark:text-gray-300/80 dark:shadow-md dark:hover:border-neutral-600 dark:hover:text-white lg:hover:!scale-125"
+                  className="card relative flex h-28  flex-col items-center justify-center gap-3 rounded-md border border-transparent bg-white p-8 text-gray-700  shadow  transition-all hover:z-10 hover:origin-center hover:border-gray-400 hover:text-black hover:shadow-lg active:!scale-90 dark:bg-darkSecondary dark:text-gray-300/80 dark:shadow-md dark:hover:border-neutral-600 dark:hover:text-white lg:hover:!scale-125"
                 >
-                  <Icon className="h-8 w-8" />
+                  <div className="card-content flex flex-col items-center justify-center">
+                    <Icon className="h-8 w-8" />
 
-                  <p className="absolute bottom-3 select-none text-[10px]">
-                    {skill.title}
-                  </p>
+                    <p className="absolute bottom-3 select-none text-[10px]">
+                      {skill.title}
+                    </p>
+                  </div>
                 </motion.a>
               </Link>
             );

@@ -139,6 +139,10 @@ body.dark {
   .pageTop {
     @apply relative mx-auto mt-[44px] mb-10 max-w-4xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-[60px] 2xl:max-w-5xl 3xl:max-w-7xl;
   }
+
+  .cards:hover > .card::after {
+    opacity: 1;
+  }
   .card:hover::before {
     opacity: 1;
   }
@@ -172,5 +176,14 @@ body.dark {
       transparent 40%
     ) !important;
     z-index: 1;
+  }
+
+  .card > .card-content {
+    background-color: inherit;
+    border-radius: inherit;
+    inset: 1px;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 2;
   }
 }
