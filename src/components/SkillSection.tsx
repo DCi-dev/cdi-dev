@@ -33,8 +33,8 @@ export default function SkillSection({ props }: { props: Skill[] }) {
           whileInView="visible"
           variants={FadeContainer}
           viewport={{ once: true }}
-          onMouseMove={(element) =>
-            WindowsAnimation.showHoverAnimation(element)
+          onMouseMove={(e) =>
+            WindowsAnimation.showHoverAnimation(e)
           }
           className="cards mt-5 grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5 "
         >
