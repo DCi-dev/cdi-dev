@@ -26,7 +26,4 @@ export default defineNextConfig({
     locales: ["en"],
     defaultLocale: "en",
   },
-  images: {
-    domains: ["i.ytimg.com"],
-  },
 });

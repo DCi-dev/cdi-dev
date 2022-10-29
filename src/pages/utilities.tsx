@@ -2,7 +2,7 @@ import utilities from "@/content/utilitiesData";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedDiv from "@components/FramerMotion/AnimatedDiv";
-import { Utility } from "@/types/Utility";
+import { Utility } from "@lib/types/index";
 import {
   FadeContainer,
   popUp,

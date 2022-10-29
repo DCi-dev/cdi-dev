@@ -30,7 +30,7 @@ import {
 } from "react-icons/si";
 import { FaSearch } from "react-icons/fa";
 import SVG from "./SVG/index";
-import { Utility } from "@/types/Utility";
+import { Utility } from "@lib/types/index";
 
 const system: Utility = {
   title: "System",
