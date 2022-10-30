@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import { navigationRoutes } from "@utils/utils";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
-import { navigationRoutes } from "@utils/utils";
+import React, { useRef, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 
 export default function TopNavbar() {
@@ -61,7 +61,6 @@ export default function TopNavbar() {
           </div>
         </nav>
         <div className="z-50 flex cursor-pointer items-center gap-2">
-          <div></div>
           <ThemeToggler />
         </div>
       </div>
