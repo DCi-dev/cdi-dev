@@ -175,7 +175,7 @@ const software: Utility = {
   data: [
     {
       name: "Bitwarden",
-      description: "Password Manager to manage all the login",
+      description: "Password Manager",
       Icon: SiBitwarden,
       link: "https://bitwarden.com/",
     },
