@@ -3,6 +3,8 @@ export default function SimpleLogin() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 164.434 121.486"
+      width="60"
+      height="40"
     >
       <defs>
         <linearGradient

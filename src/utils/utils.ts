@@ -3,6 +3,6 @@ export const navigationRoutes: string[] = [
   "about",
   "projects",
   "certificates",
-  "utilities",
+  "stack",
   "contact",
 ];

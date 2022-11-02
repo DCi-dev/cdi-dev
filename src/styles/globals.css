@@ -140,6 +140,7 @@ body.dark {
     @apply relative mx-auto mt-[44px] mb-10 max-w-5xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-[60px] 2xl:max-w-5xl 3xl:max-w-7xl;
   }
 
+  /* Cards - START */
   .cards:hover > .card::after {
     opacity: 1;
   }
@@ -186,4 +187,5 @@ body.dark {
     position: absolute;
     z-index: 2;
   }
+  /* Cards - END */
 }

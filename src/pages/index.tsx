@@ -1,12 +1,10 @@
-import type { GetStaticProps, NextPage } from "next";
+import Cards from "@/components/ui/Cards";
+import skills from "@/content/skillsData";
+import type { NextPage } from "next";
 import Head from "next/head";
-import SkillSection from "@components/SkillSection";
-import { getPinnedSkills } from "@/lib/dataFetch";
-import { Skill } from "@/lib/types/index";
 
-const Home: NextPage<{
-  skills: Skill[];
-}> = ({ skills }) => {
+const Home: NextPage = () => {
+  const skillsData = skills;
   return (
     <>
       <Head>
@@ -16,17 +14,11 @@ const Home: NextPage<{
       </Head>
 
       <main className="pageTop">
-        <SkillSection props={skills} />
+        {/* Skills */}
+        <Cards props={skillsData} />
       </main>
     </>
   );
 };
 
 export default Home;
-
-export const getStaticProps: GetStaticProps = async () => {
-  const skills: Skill[] = getPinnedSkills();
-  return {
-    props: { skills },
-  };
-};
