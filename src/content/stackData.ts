@@ -237,7 +237,7 @@ const software: Stack = {
       name: "Flameshot",
       description: "Screen capture",
       Icon: SVG.Flameshot,
-      url: "https://getsharex.com/downloads/",
+      url: "https://flameshot.org",
     },
   ],
 };
