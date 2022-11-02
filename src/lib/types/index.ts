@@ -18,3 +18,14 @@ export type Stack = {
     url: string;
   }[];
 };
+
+export type Certificate = {
+  title: string;
+  issuedDate: string;
+  issuedBy: {
+    name: string;
+    logo: string;
+  };
+  url: string;
+  pinned: boolean;
+};

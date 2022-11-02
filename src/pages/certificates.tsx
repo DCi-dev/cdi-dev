@@ -1,20 +1,10 @@
+import { Certificate } from "@/lib/types";
+import AnimatedDiv from "@components/FramerMotion/AnimatedDiv";
 import certificatesData from "@content/certificatesData";
 import { popUpFromBottomForText } from "@content/FramerMotionVariants";
-import AnimatedDiv from "@components/FramerMotion/AnimatedDiv";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-
-type Certificate = {
-  title: string;
-  issuedDate: string;
-  issuedBy: {
-    name: string;
-    logo: string;
-  };
-  url: string;
-  pinned: boolean;
-};
 
 export default function Certificates() {
   return (
