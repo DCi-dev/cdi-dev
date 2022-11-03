@@ -29,3 +29,11 @@ export const popUp = {
     duration: 0.01,
   },
 };
+
+export const mobileNavItemSideways = {
+  hidden: { x: -40, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
