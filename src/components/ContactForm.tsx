@@ -80,11 +80,11 @@ export default function ContactUs() {
         whileInView="visible"
         variants={FadeContainer}
         viewport={{ once: true }}
-        className="mx-auto mb-10 flex w-full max-w-xl flex-col items-center dark:text-gray-300"
+        className="mx-auto mb-10 flex w-full max-w-xl flex-col dark:text-gray-300"
       >
-        <h1 className="pb-12 text-2xl font-bold dark:text-gray-50">
-          Send a message
-        </h1>
+        <p className="px-4 py-11 text-center text-xl text-slate-600 dark:text-slate-400">
+          Or you can send me a good ol&apos; fashioned email if you want.
+        </p>
         <div className="grid w-full grid-cols-2 gap-6">
           <motion.div
             variants={mobileNavItemSideways}

@@ -5,6 +5,9 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   const skillsData = skills;
+  const itemsNumber =
+    "grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5";
+
   return (
     <>
       <Head>
@@ -15,7 +18,7 @@ const Home: NextPage = () => {
 
       <main className="pageTop">
         {/* Skills */}
-        <Cards props={skillsData} />
+        <Cards props={skillsData} display={itemsNumber} />
       </main>
     </>
   );

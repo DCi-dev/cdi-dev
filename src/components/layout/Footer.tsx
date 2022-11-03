@@ -1,7 +1,7 @@
+import socialLinks from "@content/socialMedia";
+import { navigationRoutes } from "@utils/utils";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
-import { navigationRoutes } from "@utils/utils";
-import socialMedia from "@content/socialMedia";
 
 export default function Footer() {
   const router = useRouter();
@@ -68,7 +68,7 @@ export default function Footer() {
           <span className="self-center font-ubuntu text-2xl">
             Get in touch:
           </span>
-          {socialMedia.slice(0, 3).map((platform, index) => {
+          {socialLinks.data.map((platform, index) => {
             return (
               <div
                 key={index}
@@ -81,7 +81,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     href={platform.url}
                   >
-                    <platform.Icon className="h-6 w-6" />
+                    <platform.Icon className="h-7 w-7" />
                   </a>
                 </Link>
               </div>

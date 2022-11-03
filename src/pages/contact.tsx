@@ -1,37 +1,52 @@
 import ContactForm from "@/components/ContactForm";
 import AnimatedDiv from "@/components/FramerMotion/AnimatedDiv";
+import Cards from "@/components/ui/Cards";
 import { popUpFromBottomForText } from "@/content/FramerMotionVariants";
+import socialLinks from "@/content/socialMedia";
+import { NextPage } from "next";
 
-export default function Contact() {
+const Contact: NextPage = () => {
+  const socials = socialLinks.data.slice(0, 3);
+  const socialData = {
+    title: "Socials",
+    data: socials,
+  };
+  const itemsNumber = "grid-cols-3 mx-5";
+
   return (
-    <div className="pageTop">
-      <div id="contact" className="!relative dark:bg-darkPrimary">
+    <div className="relative mx-auto mt-11 mb-10 max-w-7xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-16 ">
+      <div id="contact" className="!relative">
         {/* Get in touch top section */}
-        <section className="w-full-width pt-6 text-center dark:bg-darkPrimary dark:text-white">
+        <section className="w-full pt-6 text-center dark:text-white ">
           <AnimatedDiv
             variants={popUpFromBottomForText}
-            className="text-4xl font-bold"
+            className="text-6xl font-bold"
           >
-            Get in touch
+            <h1>Get in touch</h1>
           </AnimatedDiv>
 
           <AnimatedDiv
             variants={popUpFromBottomForText}
-            className="px-4 py-2 font-medium text-slate-400"
+            className="px-4 py-7 text-lg text-slate-600 dark:text-slate-400"
           >
-            Please feel free to get in touch anytime, whether for work or to say
-            Hi 🙋‍♂️.
+            <p>
+              Do you have any questions, concerns or just want to say Hi 🙋‍♂️?
+            </p>
+            <p>Here are the easiest ways to contact me!</p>
           </AnimatedDiv>
+          <div className="mx-auto max-w-lg text-center">
+            <Cards props={socialData} display={itemsNumber} />
+          </div>
         </section>
 
-        {/* Wrapper Container */}
-        <section className="mx-auto flex w-full flex-col px-5 dark:bg-darkPrimary dark:text-white lg:flex-row lg:pb-10">
-          {/* Left Contact form section */}
-          <div className="mx-auto mt-10 w-full">
+        <section className="mx-auto w-full px-2 dark:text-white  lg:pb-10">
+          <div className="mx-auto mt-10 w-full px-8">
             <ContactForm />
           </div>
         </section>
       </div>
     </div>
   );
-}
+};
+
+export default Contact;

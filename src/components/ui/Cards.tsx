@@ -3,13 +3,20 @@ import {
   popUp,
   popUpFromBottomForText,
 } from "@/content/FramerMotionVariants";
-import { Skill, Stack } from "@/lib/types";
+import { Skill, Social, Stack } from "@/lib/types";
 import { showHoverAnimation } from "@/lib/WindowsAnimation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import AnimatedDiv from "../FramerMotion/AnimatedDiv";
 
-export default function Cards({ props }: { props: Skill | Stack }) {
+export default function Cards({
+  props,
+  display,
+}: {
+  props: Skill | Stack | Social;
+  display: string;
+}) {
+  const style = display;
   return (
     <AnimatedDiv
       variants={FadeContainer}
@@ -28,7 +35,7 @@ export default function Cards({ props }: { props: Skill | Stack }) {
         variants={FadeContainer}
         viewport={{ once: true }}
         onMouseMove={(e) => showHoverAnimation(e)}
-        className="cards mt-5 grid grid-cols-3 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        className={`cards ${style} mt-5 grid gap-6`}
       >
         {props.data.map((item) => {
           return (

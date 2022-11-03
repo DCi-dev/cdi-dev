@@ -4,6 +4,9 @@ import Cards from "@/components/ui/Cards";
 
 export default function Stack() {
   const stackData = stack;
+  const itemsNumber =
+    "grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6";
+
   return (
     <>
       <section className="pageTop font-opensans">
@@ -24,7 +27,7 @@ export default function Stack() {
         <div className="flex flex-col gap-14">
           <div className="flex flex-col gap-14">
             {stackData.map((item, index) => {
-              return <Cards key={index} props={item} />;
+              return <Cards key={index} props={item} display={itemsNumber} />;
             })}
           </div>
         </div>

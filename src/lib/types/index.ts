@@ -9,6 +9,16 @@ export type Skill = {
   }[];
 };
 
+export type Social = {
+  title: string;
+  data: {
+    name: string;
+    description: string;
+    Icon: IconType;
+    url: string;
+  }[];
+};
+
 export type Stack = {
   title: string;
   data: {
