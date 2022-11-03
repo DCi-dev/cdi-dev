@@ -21,35 +21,52 @@ export default function ContactUs() {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoading(true);
-    const isValidForm = z.object({
+    const isValidFormSchema = z.object({
       firstName: z.string().min(3).max(50),
       lastName: z.string().min(3).max(50),
       email: z.string().email(),
       subject: z.string().min(3).max(50),
       message: z.string().min(3).max(500),
     });
-    if (isValidForm) {
+
+    const isValidForm = isValidFormSchema.safeParse({
+      firstName,
+      lastName,
+      email,
+      subject,
+      message,
+    });
+
+    if (isValidForm.success) {
       const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          firstName: firstName,
-          lastName: lastName,
-          subject: subject,
-          message: message,
-        }),
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        method: "POST",
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          subject,
+          message,
+        }),
       });
-      setLoading(false);
-      toast.success("Message Sent ✌!");
-      const { error } = await res.json();
-      if (error) {
-        console.log(error.text);
+
+      if (res.status === 200) {
+        toast.success("Message Sent ✌!");
         setLoading(false);
-        return toast.error("Looks like you did not fill out the form.");
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      } else {
+        toast.error("Something went wrong");
+        setLoading(false);
       }
+    } else {
+      toast.error("Please fill all the fields");
+      setLoading(false);
     }
   };
 
