@@ -79,10 +79,10 @@ body::-webkit-scrollbar {
 }
 
 html.light {
-  background-color: hsl(214, 15%, 91%);
+  background-color: hsl(0, 0%, 88%);
 }
 html.dark {
-  background-color: hsl(209, 20%, 25%);
+  background-color: hsl(0, 0%, 13%);
 }
 
 /* Adding Scroll Margin for top */
@@ -103,7 +103,7 @@ pre::-webkit-scrollbar {
 }
 
 body.dark {
-  background-color: hsl(210, 24%, 16%);
+  background-color: hsl(0, 0%, 13%);
 }
 
 ::-webkit-scrollbar {
@@ -114,11 +114,11 @@ body.dark {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(211, 10%, 53%);
+  background-color: hsl(0, 0%, 53%);
 }
 
 .dark::-webkit-scrollbar-thumb {
-  background-color: hsl(214, 15%, 91%);
+  background-color: hsl(0, 0%, 91%);
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -131,11 +131,11 @@ body.dark {
 
 /* Nprogress bar Custom Styling (force) : STARTS */
 #nprogress .bar {
-  background-color: hsl(212, 92%, 43%) !important;
+  background-color: hsl(42, 87%, 55%) !important;
   height: 3px !important;
 }
 .dark #nprogress .bar {
-  background: hsl(216, 33%, 97%) !important;
+  background: hsl(44, 92%, 63%) !important;
 }
 #nprogress .peg {
   box-shadow: none !important;
@@ -171,7 +171,7 @@ body.dark {
   .card::before {
     background: radial-gradient(
       400px circle at var(--mouse-x) var(--mouse-y),
-      hsl(212, 92%, 43%, 0.6),
+      hsl(42, 87%, 55%, 0.5),
       transparent 40%
     ) !important;
     z-index: 3;
@@ -180,7 +180,7 @@ body.dark {
   .card::after {
     background: radial-gradient(
       200px circle at var(--mouse-x) var(--mouse-y),
-      hsl(210, 83%, 53%, 0.5),
+      hsl(44, 92%, 63%, 0.4),
       transparent 40%
     ) !important;
     z-index: 1;

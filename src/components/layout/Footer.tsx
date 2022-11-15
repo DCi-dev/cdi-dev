@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="mb-6 md:mb-0">
           <Link href="/" passHref className="flex items-center">
             <a className="flex items-center">
-              <span className="font-squartiqa text-6xl text-primary-900 dark:text-primary-200">
+              <span className="font-squartiqa text-6xl text-primary-600">
                 CDi
               </span>
             </a>
@@ -72,7 +72,7 @@ export default function Footer() {
             return (
               <div
                 key={index}
-                className="self-center text-neutral-600 hover:text-primary-800 dark:text-neutral-400 dark:hover:text-primary-200"
+                className="self-center text-neutral-600 hover:text-primary-800 dark:text-neutral-400 dark:hover:text-primary-600"
               >
                 <Link href={platform.url} passHref className="mb-4">
                   <a

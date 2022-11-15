@@ -38,7 +38,7 @@ export default function TopNavbar() {
         <Link href="/" passHref>
           <div className="z-50 flex cursor-pointer items-center gap-2">
             <a className="relative mr-3 hidden sm:inline-flex">
-              <span className="font-squartiqa text-2xl text-primary-900 dark:text-primary-200">
+              <span className="font-squartiqa text-2xl text-primary-600">
                 CDi
               </span>
             </a>

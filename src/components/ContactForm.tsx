@@ -1,6 +1,6 @@
 import {
   FadeContainer,
-  mobileNavItemSideways
+  mobileNavItemSideways,
 } from "@/content/FramerMotionVariants";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -212,7 +212,7 @@ export default function ContactUs() {
           >
             <button
               type="submit"
-              className="relative w-full  overflow-hidden rounded-lg bg-primary-800 px-4 py-3 text-center text-sm font-bold text-neutral-100 outline-none transition duration-300 active:scale-95 dark:bg-primary-600"
+              className="relative w-full  overflow-hidden rounded-lg bg-primary-600 px-4 py-3 text-center text-sm font-bold text-neutral-100 outline-none transition duration-300 active:scale-95 "
             >
               <div className="relative flex w-full items-center justify-center">
                 <p
