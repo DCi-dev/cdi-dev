@@ -14,10 +14,10 @@ const Contact: NextPage = () => {
   const itemsNumber = "grid-cols-3 mx-5";
 
   return (
-    <div className="relative mx-auto mt-11 mb-10 max-w-7xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-16 ">
+    <div className="relative mx-auto mt-11 mb-10 max-w-7xl bg-neutral-200 p-4 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200 md:mt-16 ">
       <div id="contact" className="!relative">
         {/* Get in touch top section */}
-        <section className="w-full pt-6 text-center dark:text-white ">
+        <section className="w-full pt-6 text-center dark:text-neutral-100 ">
           <AnimatedDiv
             variants={popUpFromBottomForText}
             className="text-6xl font-bold"
@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
 
           <AnimatedDiv
             variants={popUpFromBottomForText}
-            className="px-4 py-7 text-lg text-slate-600 dark:text-slate-400"
+            className="px-4 py-7 text-lg text-neutral-600 dark:text-neutral-300"
           >
             <p>
               Do you have any questions, concerns or just want to say Hi 🙋‍♂️?
@@ -39,8 +39,8 @@ const Contact: NextPage = () => {
           </div>
         </section>
 
-        <section className="mx-auto w-full px-2 dark:text-white  lg:pb-10">
-          <div className="mx-auto mt-10 w-full px-8">
+        <section className="mx-auto w-full px-2 dark:text-neutral-100  lg:pb-10">
+          <div className="mx-auto mt-4 w-full px-8">
             <ContactForm />
           </div>
         </section>

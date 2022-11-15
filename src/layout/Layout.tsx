@@ -1,6 +1,6 @@
 import TopNavbar from "@/components/layout/TopNavbar";
-import ScrollToTopButton from "@components/layout/ScrollToTopButton";
 import Footer from "@components/layout/Footer";
+import ScrollToTopButton from "@components/layout/ScrollToTopButton";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

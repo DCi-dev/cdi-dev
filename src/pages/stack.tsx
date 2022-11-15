@@ -14,11 +14,11 @@ export default function Stack() {
           <h1 className="mb-6 font-ubuntu text-4xl font-bold  text-neutral-900 dark:text-neutral-200 md:text-5xl lg:text-6xl">
             Stack
           </h1>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-neutral-700 dark:text-neutral-300">
             If you are wondering what tech I use, here&apos;s the list of what
             I&apos;m currently working with.
           </p>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-neutral-700 dark:text-neutral-300">
             Based on the principle of separation of concerns, I prefer to use
             different applications for different purposes.
           </p>

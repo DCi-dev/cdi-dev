@@ -1,6 +1,6 @@
 import {
   FadeContainer,
-  mobileNavItemSideways,
+  mobileNavItemSideways
 } from "@/content/FramerMotionVariants";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -80,9 +80,9 @@ export default function ContactUs() {
         whileInView="visible"
         variants={FadeContainer}
         viewport={{ once: true }}
-        className="mx-auto mb-10 flex w-full max-w-xl flex-col items-center dark:text-gray-300"
+        className="mx-auto mb-10 flex w-full max-w-xl flex-col items-center dark:text-neutral-300"
       >
-        <p className="px-4 py-11 text-center text-xl text-slate-600 dark:text-slate-400">
+        <p className="px-4 py-11 text-center text-xl text-slate-600 dark:text-neutral-300">
           Or you can send me a good ol&apos; fashioned email if you want.
         </p>
         <div className="grid w-full grid-cols-2 gap-6">
@@ -94,7 +94,7 @@ export default function ContactUs() {
               type="text"
               name="firstName"
               id="firstName"
-              className="text-white-900 peer mt-2 block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-sm focus:border-black focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-white"
+              className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
               placeholder=" "
               required
               value={firstName}
@@ -104,7 +104,7 @@ export default function ContactUs() {
             />
             <label
               htmlFor="firstName"
-              className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-slate-400 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-black dark:text-gray-400 dark:peer-focus:text-white"
+              className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
             >
               First name
             </label>
@@ -117,7 +117,7 @@ export default function ContactUs() {
               type="text"
               name="lastName"
               id="lastName"
-              className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-white"
+              className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
               placeholder=" "
               required
               value={lastName}
@@ -127,7 +127,7 @@ export default function ContactUs() {
             />
             <label
               htmlFor="lastName"
-              className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-slate-400 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-black dark:text-gray-400 dark:peer-focus:text-white"
+              className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
             >
               Last name
             </label>
@@ -141,7 +141,7 @@ export default function ContactUs() {
             type="email"
             name="email"
             id="email"
-            className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white focus:dark:border-white"
+            className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-black focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 focus:dark:border-neutral-100"
             placeholder=" "
             required
             value={email}
@@ -151,7 +151,7 @@ export default function ContactUs() {
           />
           <label
             htmlFor="email"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-slate-400 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-black dark:text-gray-400 dark:peer-focus:text-white"
+            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
           >
             Email address
           </label>
@@ -164,7 +164,7 @@ export default function ContactUs() {
             type="subject"
             name="subject"
             id="subject"
-            className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-white"
+            className="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
             placeholder=" "
             required
             value={subject}
@@ -174,7 +174,7 @@ export default function ContactUs() {
           />
           <label
             htmlFor="subject"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-slate-400 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-black dark:text-gray-400 dark:peer-focus:text-white"
+            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
           >
             Subject
           </label>
@@ -186,7 +186,7 @@ export default function ContactUs() {
           <textarea
             name="message"
             id="message"
-            className="peer mt-2 block min-h-[100px] w-full resize-y appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-sm text-gray-900 focus:border-black focus:outline-none  focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-white"
+            className="peer mt-2 block min-h-[100px] w-full resize-y appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none  focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
             placeholder=" "
             required
             value={message}
@@ -196,7 +196,7 @@ export default function ContactUs() {
           />
           <label
             htmlFor="message"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-slate-400 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-black dark:text-gray-400 dark:peer-focus:text-white"
+            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
           >
             Message
           </label>
@@ -212,7 +212,7 @@ export default function ContactUs() {
           >
             <button
               type="submit"
-              className="relative w-full  overflow-hidden rounded-lg bg-neutral-800 px-4 py-3 text-center text-sm font-medium text-white outline-none transition duration-300 active:scale-95 dark:bg-darkSecondary"
+              className="relative w-full  overflow-hidden rounded-lg bg-primary-800 px-4 py-3 text-center text-sm font-bold text-neutral-100 outline-none transition duration-300 active:scale-95 dark:bg-primary-600"
             >
               <div className="relative flex w-full items-center justify-center">
                 <p

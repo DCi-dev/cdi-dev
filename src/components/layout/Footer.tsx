@@ -6,14 +6,14 @@ import { NextRouter, useRouter } from "next/router";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="bg-white p-4 dark:bg-black print:hidden sm:p-6">
-      <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
+    <footer className="  w-full bg-neutral-100 p-4 dark:bg-neutral-1000 print:hidden sm:p-6">
+      <hr className="my-6 border-neutral-200 dark:border-neutral-700 sm:mx-auto lg:my-8" />
       <div className="md:flex md:justify-evenly">
         {/* Logo */}
         <div className="mb-6 md:mb-0">
           <Link href="/" passHref className="flex items-center">
             <a className="flex items-center">
-              <span className="font-squartiqa text-6xl text-black dark:text-white">
+              <span className="font-squartiqa text-6xl text-primary-900 dark:text-primary-200">
                 CDi
               </span>
             </a>
@@ -65,14 +65,14 @@ export default function Footer() {
 
       <div className="pt-12 pb-8 sm:flex sm:items-center sm:justify-center">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-          <span className="self-center font-ubuntu text-2xl">
+          <span className="self-center font-ubuntu text-2xl text-neutral-900 dark:text-neutral-200">
             Get in touch:
           </span>
           {socialLinks.data.map((platform, index) => {
             return (
               <div
                 key={index}
-                className="self-center text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                className="self-center text-neutral-600 hover:text-primary-800 dark:text-neutral-400 dark:hover:text-primary-200"
               >
                 <Link href={platform.url} passHref className="mb-4">
                   <a
@@ -108,9 +108,9 @@ function FooterLink({
       <a
         className={`${
           isActive
-            ? "text-gray-800 dark:text-gray-100"
-            : " text-gray-600 dark:text-gray-300"
-        } w-fit hover:text-black hover:underline dark:hover:text-white`}
+            ? "text-neutral-900 dark:text-neutral-200"
+            : " text-neutral-600 dark:text-neutral-400"
+        } w-fit font-bold hover:text-neutral-1000 hover:underline dark:hover:text-neutral-100`}
       >
         <span className="text-lg capitalize">{text}</span>
       </a>

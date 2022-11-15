@@ -20,7 +20,7 @@ export default function Cards({
   return (
     <AnimatedDiv
       variants={FadeContainer}
-      className="!w-full   selection:bg-blue-300 dark:text-neutral-200 dark:selection:bg-blue-900 dark:selection:text-gray-400"
+      className="!w-full   selection:bg-neutral-300 dark:text-neutral-200 dark:selection:bg-blue-900 dark:selection:text-neutral-400"
     >
       <motion.h2
         variants={popUpFromBottomForText}
@@ -45,7 +45,7 @@ export default function Cards({
                 title={item.name + " - " + item.description}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="card relative flex h-28  flex-col items-center justify-center gap-3 rounded-md border border-transparent bg-white p-8 text-gray-700  shadow  transition-all hover:z-10 hover:origin-center hover:border-gray-400 hover:text-black hover:shadow-lg active:!scale-90 dark:bg-darkSecondary dark:text-gray-300/80 dark:shadow-md dark:hover:border-neutral-600 dark:hover:text-white lg:hover:!scale-125"
+                className="card relative flex h-28  flex-col items-center justify-center gap-3 rounded-md border border-transparent bg-neutral-100 p-8 text-neutral-900  shadow  transition-all hover:z-10 hover:origin-center hover:border-neutral-400 hover:text-neutral-1000 hover:shadow-lg active:!scale-90 dark:bg-neutral-1000 dark:text-neutral-200 dark:shadow-md dark:hover:border-neutral-600 dark:hover:text-neutral-100 lg:hover:!scale-125"
               >
                 <div className="card-content flex flex-col items-center justify-center">
                   <item.Icon className="h-10 w-10" />

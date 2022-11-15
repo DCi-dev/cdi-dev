@@ -1,8 +1,6 @@
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BsMoonStars, BsSun } from "react-icons/bs";
-
-
 
 const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
@@ -16,9 +14,9 @@ const ThemeToggler = () => {
       aria-label="Toggle Dark Mode"
     >
       {theme === "light" ? (
-        <BsMoonStars className="h-6 w-6 select-none transition active:scale-75 sm:h-7 sm:w-7" />
+        <BsMoonStars className="h-6 w-6 select-none text-primary-1000 transition active:scale-75 sm:h-7 sm:w-7" />
       ) : (
-        <BsSun className="h-6 w-6 select-none transition active:scale-75 sm:h-7 sm:w-7" />
+        <BsSun className="h-6 w-6 select-none text-primary-100 transition active:scale-75 sm:h-7 sm:w-7" />
       )}
     </button>
   );

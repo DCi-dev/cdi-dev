@@ -78,6 +78,13 @@ body::-webkit-scrollbar {
   width: 6px;
 }
 
+html.light {
+  background-color: hsl(214, 15%, 91%);
+}
+html.dark {
+  background-color: hsl(209, 20%, 25%);
+}
+
 /* Adding Scroll Margin for top */
 * {
   scroll-margin-top: 80px;
@@ -96,7 +103,7 @@ pre::-webkit-scrollbar {
 }
 
 body.dark {
-  background-color: #181a1b;
+  background-color: hsl(210, 24%, 16%);
 }
 
 ::-webkit-scrollbar {
@@ -107,11 +114,11 @@ body.dark {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #b3b3b3;
+  background-color: hsl(211, 10%, 53%);
 }
 
 .dark::-webkit-scrollbar-thumb {
-  background-color: #393e41;
+  background-color: hsl(214, 15%, 91%);
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -124,11 +131,11 @@ body.dark {
 
 /* Nprogress bar Custom Styling (force) : STARTS */
 #nprogress .bar {
-  background-color: rgba(0, 89, 255, 0.7) !important;
+  background-color: hsl(212, 92%, 43%) !important;
   height: 3px !important;
 }
 .dark #nprogress .bar {
-  background: #fff !important;
+  background: hsl(216, 33%, 97%) !important;
 }
 #nprogress .peg {
   box-shadow: none !important;
@@ -164,7 +171,7 @@ body.dark {
   .card::before {
     background: radial-gradient(
       400px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.06),
+      hsl(212, 92%, 43%, 0.6),
       transparent 40%
     ) !important;
     z-index: 3;
@@ -173,7 +180,7 @@ body.dark {
   .card::after {
     background: radial-gradient(
       200px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.5),
+      hsl(210, 83%, 53%, 0.5),
       transparent 40%
     ) !important;
     z-index: 1;

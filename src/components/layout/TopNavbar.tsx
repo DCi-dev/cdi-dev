@@ -25,7 +25,7 @@ export default function TopNavbar() {
   return (
     <>
       <div
-        className="fixed top-0 z-50 flex w-full items-center justify-between bg-white px-4 py-[10px] dark:bg-black dark:text-white print:hidden sm:p-4 sm:px-6"
+        className="fixed top-0 z-50 flex w-full items-center justify-between bg-neutral-100 px-4 py-[10px] text-neutral-1000 dark:bg-neutral-1000 dark:text-neutral-100 print:hidden sm:p-4 sm:px-6"
         ref={navRef}
       >
         {/* Mobile Navigation Hamburger and MobileMenu */}
@@ -38,7 +38,7 @@ export default function TopNavbar() {
         <Link href="/" passHref>
           <div className="z-50 flex cursor-pointer items-center gap-2">
             <a className="relative mr-3 hidden sm:inline-flex">
-              <span className="font-squartiqa text-2xl text-black dark:text-white">
+              <span className="font-squartiqa text-2xl text-primary-900 dark:text-primary-200">
                 CDi
               </span>
             </a>
@@ -84,9 +84,9 @@ function NavItem({
       <a
         className={`${
           isActive
-            ? "font-bold text-gray-800 dark:text-gray-100"
-            : " text-gray-600 dark:text-gray-300"
-        } hidden rounded-md px-2 py-[3px] text-[17px] transition-all hover:bg-gray-100 dark:hover:bg-neutral-700/50 sm:inline-block md:px-3`}
+            ? "font-bold text-neutral-900 dark:text-neutral-200"
+            : " text-neutral-700 dark:text-neutral-400"
+        } hidden rounded-md px-2 py-[3px] text-[17px] transition-all hover:bg-neutral-300 dark:hover:bg-neutral-800/50 sm:inline-block md:px-3`}
       >
         <span className="capitalize">{text}</span>
       </a>
@@ -150,7 +150,7 @@ const MobileMenu = ({
   handleClick: () => void;
 }) => {
   return (
-    <div className="absolute top-0 left-0 z-10 h-screen w-screen bg-white font-normal dark:bg-darkPrimary sm:hidden">
+    <div className="absolute top-0 left-0 z-10 h-screen w-screen bg-neutral-100 font-normal dark:bg-neutral-1000 sm:hidden">
       <nav className="mx-8 mt-28 flex flex-col">
         {links.map((link, index) => {
           const navlink =
@@ -159,7 +159,7 @@ const MobileMenu = ({
             <Link href={navlink} key={`mobileNav-${index}`} passHref>
               <a
                 href={navlink}
-                className="flex w-auto cursor-pointer border-b border-gray-300 py-4 text-base font-semibold capitalize text-gray-900 dark:border-gray-700 dark:text-gray-100"
+                className="flex w-auto cursor-pointer border-b border-neutral-300 py-4 text-base font-semibold capitalize text-neutral-900 dark:border-neutral-700 dark:text-neutral-100"
                 onClick={handleClick}
               >
                 {link === "rss" ? link.toUpperCase() : link}
