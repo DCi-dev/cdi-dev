@@ -6,7 +6,7 @@ import { NextRouter, useRouter } from "next/router";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="  w-full bg-neutral-100 p-4 dark:bg-neutral-1000 print:hidden sm:p-6">
+    <footer className="mt-auto w-full bg-neutral-100 p-4 dark:bg-neutral-1000 print:hidden sm:p-6">
       <hr className="my-6 border-neutral-200 dark:border-neutral-700 sm:mx-auto lg:my-8" />
       <div className="md:flex md:justify-evenly">
         {/* Logo */}
