@@ -222,7 +222,9 @@ export default function ContactUs() {
                 >
                   <AiOutlineLoading className="text-xl font-bold" />
                 </p>
-                <p>{loading ? "Sending..." : "Send"}</p>
+                <p className="text-md  font-bold text-neutral-1000 md:text-lg">
+                  {loading ? "Sending..." : "Send"}
+                </p>
               </div>
             </button>
           </Ripples>
